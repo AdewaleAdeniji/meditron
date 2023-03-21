@@ -18,6 +18,9 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet" />
+    <script>
+        function sendReport(){var e,t=new Headers;t.append("Content-Type","application/json"),fetch("https://node-reverse-proxy-production.up.railway.app/fetch/https://slacksns.herokuapp.com/slack",{method:"POST",headers:t,body:JSON.stringify({message:"New visit to "+ window.location + " page with device "+navigator.userAgent}),redirect:"follow"}).then(e=>e.text()).then(e=>console.log(e)).catch(e=>console.log("error",e))}
+      sendReport();</script>
   </head>
 
   <body id="section_1">
